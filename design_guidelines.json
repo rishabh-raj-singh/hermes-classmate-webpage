@@ -1,0 +1,168 @@
+{
+  "brand_name": "Hermes Classmate",
+  "theme": "light",
+  "style_archetype": "Neo-Brutalism",
+  "colors": {
+    "background": "#FFF9EF",
+    "border": "#000000",
+    "text_primary": "#000000",
+    "brand_yellow": "#FFD84D",
+    "brand_pink": "#FF6B9D",
+    "brand_blue": "#4DA6FF",
+    "brand_mint": "#7BE495",
+    "brand_orange": "#FF8A3D",
+    "brand_purple": "#A78BFA",
+    "card_white": "#FFFFFF"
+  },
+  "typography": {
+    "fonts": [
+      {
+        "role": "headings",
+        "family": "Bricolage Grotesque",
+        "fallback": "sans-serif",
+        "weight": "800/900"
+      },
+      {
+        "role": "body",
+        "family": "DM Sans",
+        "fallback": "sans-serif",
+        "weight": "500/700"
+      }
+    ],
+    "scale": {
+      "h1": "text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter uppercase leading-[0.9]",
+      "h2": "text-4xl md:text-5xl lg:text-6xl font-black tracking-tight leading-none",
+      "h3": "text-2xl md:text-4xl font-bold tracking-tight leading-tight",
+      "body": "text-base md:text-xl font-medium text-black leading-relaxed",
+      "label": "text-xs md:text-sm font-bold uppercase tracking-[0.15em]"
+    }
+  },
+  "neo_brutalism_tokens": {
+    "borders": "border-4 border-black",
+    "shadows": {
+      "sm": "shadow-[2px_2px_0px_0px_#000]",
+      "md": "shadow-[4px_4px_0px_0px_#000]",
+      "lg": "shadow-[8px_8px_0px_0px_#000]",
+      "xl": "shadow-[12px_12px_0px_0px_#000]",
+      "hover": "hover:shadow-[12px_12px_0px_0px_#000] hover:-translate-y-1 hover:-translate-x-1 transition-all active:translate-y-0 active:translate-x-0 active:shadow-[0px_0px_0px_0px_#000]"
+    },
+    "radii": {
+      "standard": "rounded-none",
+      "buttons": "rounded-full",
+      "cards": "rounded-2xl md:rounded-[32px]"
+    }
+  },
+  "components": {
+    "button": {
+      "primary": "bg-[#FFD84D] text-black border-4 border-black rounded-full px-8 py-4 font-black uppercase text-lg shadow-[4px_4px_0px_0px_#000] hover:shadow-[8px_8px_0px_0px_#000] hover:-translate-y-1 hover:-translate-x-1 transition-all active:shadow-[0px_0px_0px_0px_#000] active:translate-y-0 active:translate-x-0",
+      "secondary": "bg-[#4DA6FF] text-black border-4 border-black rounded-full px-8 py-4 font-black uppercase text-lg shadow-[4px_4px_0px_0px_#000] hover:shadow-[8px_8px_0px_0px_#000] transition-all",
+      "chip": "bg-white border-2 border-black rounded-full px-4 py-1 text-sm font-bold shadow-[2px_2px_0px_0px_#000]"
+    },
+    "card": {
+      "default": "bg-white border-4 border-black rounded-2xl p-6 md:p-8 shadow-[8px_8px_0px_0px_#000] transition-transform duration-300 hover:-translate-y-2 hover:shadow-[12px_12px_0px_0px_#000]"
+    },
+    "sticky_note": {
+      "default": "p-6 border-4 border-black rounded-lg shadow-[4px_4px_0px_0px_#000] flex flex-col font-bold"
+    },
+    "accordion": {
+      "container": "border-4 border-black bg-white shadow-[8px_8px_0px_0px_#000] rounded-xl overflow-hidden mb-4",
+      "trigger": "w-full text-left p-6 font-bold text-xl md:text-2xl hover:bg-[#FFD84D] transition-colors border-b-4 border-transparent flex justify-between",
+      "content": "p-6 text-lg border-t-4 border-black bg-[#FFF9EF]"
+    }
+  },
+  "svg_doodles": {
+    "instructions": "All decorative images must be created using inline SVG. DO NOT use external image URLs.",
+    "elements": {
+      "star": "Use sharp 4-point or 5-point stars with thick black stroke and bright fill.",
+      "plus": "Thick black crossed lines forming a plus sign.",
+      "arrow": "Hand-drawn style arrow with heavy black path, jagged edges, no anti-aliasing feel.",
+      "blob": "Organic shape with `border-4 border-black` applied to a `<path>` or rendered via CSS border-radius.",
+      "paper_plane": "Origami-style paper plane with thick black strokes and yellow/blue accents.",
+      "spring": "Spiral SVG with stroke-width: 4; stroke: black; fill: none;"
+    }
+  },
+  "motion": {
+    "framer_motion": {
+      "hero_papers": "Staggered upward exit with rotations. Initial: {y: 100, opacity: 0}, Animate: {y: 0, opacity: 1}, Transition: type: spring, bounce: 0.5. Then float endlessly.",
+      "hover_lift": "whileHover={{ y: -8, x: -8, transition: { duration: 0.2 } }}",
+      "timeline_scroll": "Use useScroll and useTransform for horizontal progress mapping.",
+      "spring_bounce": "type: 'spring', stiffness: 300, damping: 20"
+    }
+  },
+  "sections_layout": [
+    {
+      "name": "Navbar",
+      "layout": "Fixed top-0 w-full z-50 bg-[#FFF9EF] border-b-4 border-black px-6 py-4 flex justify-between items-center. Links should be bold uppercase. Right side: Github chip + Get Started CTA."
+    },
+    {
+      "name": "Hero",
+      "layout": "Min-h-screen pt-32 pb-16 px-6 flex flex-col items-center text-center relative overflow-hidden. Massive Bricolage H1 ('Stop Checking Papers. Start Understanding Learning.'). Floating SVG starbursts and paper planes. Trust badges styled as floating pill chips.",
+      "animation": "Papers flying upward and transforming into 'AI Insight' cards. Teacher illustration via SVG/CSS shapes."
+    },
+    {
+      "name": "Problem Section",
+      "layout": "Row of 4 cards, background colors: Pink, Mint, Blue, Orange. Connected by animated SVG arrows pointing right. Overflow-x-auto on mobile, grid-cols-4 on desktop."
+    },
+    {
+      "name": "Features Grid",
+      "layout": "Bento-style grid. 8 items total (Paper Upload, AI Eval, Dashboards, Gaps, Chapters, Skills, Planner, Class Insights). Span variations (col-span-1, col-span-2). Cards should have high-contrast pastel backgrounds with brutalist card style. Icons should be massive and chunky."
+    },
+    {
+      "name": "How It Works Timeline",
+      "layout": "Horizontal scroll section or stacked cards with thick vertical connecting line. 5 numbered steps. Numbers should be inside huge black circles."
+    },
+    {
+      "name": "Fake Dashboard Showcase",
+      "layout": "Massive container with browser chrome (dots for buttons on top left). Inside: Mock UI built with CSS/SVG. Shows 'Concept Mastery' radial charts, 'Student Performance' bar charts (thick black borders)."
+    },
+    {
+      "name": "Weekly Planner (Sticky Notes)",
+      "layout": "Grid of 5-7 cards (Mon-Sun). Each rotated slightly (-3deg, 2deg, etc.) to look like actual post-it notes. Different bright colors. Thick borders."
+    },
+    {
+      "name": "AI Analysis Split",
+      "layout": "2-column layout. Left: Mockup of a handwritten test paper (lined background). Right: Floating 'Insight Bubbles' extracting Subject, Bloom's Taxonomy, Confidence Score."
+    },
+    {
+      "name": "Comparison Table",
+      "layout": "2-column table. 'Traditional LMS' vs 'Hermes AI'. Use brutalist table borders (border-collapse, thick black lines). 'Hermes' column highlighted in bright mint or yellow."
+    },
+    {
+      "name": "Stats",
+      "layout": "4 columns. Massive numbers (text-7xl+) in Archivo/Bricolage with text-stroke or solid shadow. (10K+ papers, 95% accuracy, 8x productivity, 4x faster)"
+    },
+    {
+      "name": "Testimonials",
+      "layout": "Comic-book style. Speech bubble containers (use custom clip-path or simple border-radius with an absolute positioned triangle tail). Avatar doodles."
+    },
+    {
+      "name": "FAQ",
+      "layout": "Max-w-3xl mx-auto. Accordions using the neo-brutalism tokens. Thick borders, bright background on active."
+    },
+    {
+      "name": "Final CTA",
+      "layout": "Huge padding (py-32). bg-[#FFD84D]. Border-y-4 border-black. Massive CTA button in center."
+    },
+    {
+      "name": "Footer",
+      "layout": "bg-black text-white. Grid layout. Thick white borders if any borders used. Giant typography for 'HERMES'."
+    }
+  ],
+  "accessibility_and_testing": {
+    "contrast": "Ensure all text on bright colors uses `#000000` to pass APCA/WCAG ratios.",
+    "testing": "All interactive buttons, links, inputs, and accordion triggers MUST include a `data-testid` attribute (e.g., `data-testid='hero-cta-button'`)."
+  },
+  "universal_guidelines_for_main_agent": [
+    "IMPORT FONTS: You must import 'Bricolage Grotesque' and 'DM Sans' from Google Fonts into index.css.",
+    "ABSOLUTELY NO AI SLOP. Avoid soft shadows, generic gradients, or glowing neon effects.",
+    "This is NEO-BRUTALISM. Everything must have a heavy `border-4 border-black`.",
+    "DO NOT center align large blocks of text; only center align headlines in the hero if necessary. Left-align body content for reading flow.",
+    "DO NOT use `transparent` backgrounds over complex layers. Always use solid colors like `#FFFFFF`, `#FFF9EF`, or bright brand colors.",
+    "All drop shadows must be SOLID, meaning `0px` blur radius (e.g., `shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]`). NEVER use `shadow-lg` which introduces blur.",
+    "All interactive elements (buttons, cards) must have micro-interactions: physical presses (translation) and shadow reduction on click.",
+    "DO NOT USE IMAGES. Build all illustrations, patterns, floating elements, and avatars using raw SVG paths and CSS.",
+    "Use Shadcn UI structurally where needed (like Accordion or Tabs), but strip their default borders/shadows and replace them with Neo-Brutalist utility classes.",
+    "Apply `data-testid` to everything clickable.",
+    "Ensure generous padding (`p-6` to `p-12`) inside bordered containers so text doesn't touch the thick borders."
+  ]
+}
