@@ -68,7 +68,7 @@ export default function Navbar() {
             <Github size={18} strokeWidth={2.5} />
           </a>
           <a
-            href="https://hermes-classmate.pages.dev"
+            href={process.env.REACT_APP_DEMO_URL}
             target="_blank"
             rel="noopener noreferrer"
             data-testid="nav-cta-get-started"

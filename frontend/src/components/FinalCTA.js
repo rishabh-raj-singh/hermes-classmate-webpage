@@ -42,7 +42,7 @@ export default function FinalCTA() {
 
           <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
             <a
-              href="https://hermes-classmate.pages.dev"
+              href={process.env.REACT_APP_DEMO_URL}
               target="_blank"
               rel="noopener noreferrer"
               data-testid="final-cta-primary"
@@ -52,7 +52,7 @@ export default function FinalCTA() {
               <ArrowRight className="group-hover:translate-x-1 transition-transform" size={22} strokeWidth={2.75} />
             </a>
             <a
-              href="https://hermes-classmate.pages.dev"
+              href={process.env.REACT_APP_DEMO_URL}
               target="_blank"
               rel="noopener noreferrer"
               data-testid="final-cta-secondary"

@@ -75,7 +75,7 @@ export default function Hero() {
             className="mt-10 flex flex-wrap items-center gap-4"
           >
             <a
-              href="https://hermes-classmate.pages.dev"
+              href={process.env.REACT_APP_DEMO_URL}
               target="_blank"
               rel="noopener noreferrer"
               data-testid="hero-cta-primary"
@@ -85,7 +85,7 @@ export default function Hero() {
               <ArrowRight className="group-hover:translate-x-1 transition-transform" size={20} strokeWidth={2.75} />
             </a>
             <a
-              href="https://hermes-classmate.pages.dev"
+              href={process.env.REACT_APP_DEMO_URL}
               target="_blank"
               rel="noopener noreferrer"
               data-testid="hero-cta-secondary"
