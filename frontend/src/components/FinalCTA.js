@@ -42,7 +42,9 @@ export default function FinalCTA() {
 
           <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
             <a
-              href="#top"
+              href="https://hermes-classmate.pages.dev"
+              target="_blank"
+              rel="noopener noreferrer"
               data-testid="final-cta-primary"
               className="group inline-flex items-center gap-2 bg-black text-brand-yellow nb-border-thick rounded-full px-8 py-4 md:px-10 md:py-5 font-black uppercase tracking-wider text-base md:text-lg shadow-nb-lg hover:-translate-y-1 hover:-translate-x-1 hover:shadow-nb-2xl active:translate-x-0 active:translate-y-0 active:shadow-none transition-all"
             >
@@ -50,12 +52,14 @@ export default function FinalCTA() {
               <ArrowRight className="group-hover:translate-x-1 transition-transform" size={22} strokeWidth={2.75} />
             </a>
             <a
-              href="#top"
+              href="https://hermes-classmate.pages.dev"
+              target="_blank"
+              rel="noopener noreferrer"
               data-testid="final-cta-secondary"
               className="inline-flex items-center gap-2 bg-white nb-border-thick rounded-full px-8 py-4 md:px-10 md:py-5 font-black uppercase tracking-wider text-base md:text-lg shadow-nb hover:-translate-y-1 hover:-translate-x-1 hover:shadow-nb-lg transition-all"
             >
               <Calendar size={20} strokeWidth={2.75} />
-              Book Demo
+              See Demo
             </a>
           </div>
 

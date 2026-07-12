@@ -68,7 +68,9 @@ export default function Navbar() {
             <Github size={18} strokeWidth={2.5} />
           </a>
           <a
-            href="#cta"
+            href="https://hermes-classmate.pages.dev"
+            target="_blank"
+            rel="noopener noreferrer"
             data-testid="nav-cta-get-started"
             className="inline-flex items-center gap-1.5 bg-black text-brand-yellow font-black uppercase tracking-wider text-xs md:text-sm rounded-full px-4 md:px-5 py-2.5 md:py-3 nb-border shadow-nb hover:-translate-y-0.5 hover:-translate-x-0.5 hover:shadow-nb-md transition-all"
           >

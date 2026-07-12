@@ -75,7 +75,9 @@ export default function Hero() {
             className="mt-10 flex flex-wrap items-center gap-4"
           >
             <a
-              href="#dashboard"
+              href="https://hermes-classmate.pages.dev"
+              target="_blank"
+              rel="noopener noreferrer"
               data-testid="hero-cta-primary"
               className="group inline-flex items-center gap-2 bg-brand-yellow nb-border-thick rounded-full px-7 py-4 font-black uppercase tracking-wider text-base md:text-lg shadow-nb-md hover:-translate-y-1 hover:-translate-x-1 hover:shadow-nb-xl active:translate-x-0 active:translate-y-0 active:shadow-none transition-all"
             >
@@ -83,12 +85,14 @@ export default function Hero() {
               <ArrowRight className="group-hover:translate-x-1 transition-transform" size={20} strokeWidth={2.75} />
             </a>
             <a
-              href="#how"
+              href="https://hermes-classmate.pages.dev"
+              target="_blank"
+              rel="noopener noreferrer"
               data-testid="hero-cta-secondary"
               className="inline-flex items-center gap-2 bg-white nb-border-thick rounded-full px-7 py-4 font-black uppercase tracking-wider text-base md:text-lg shadow-nb hover:-translate-y-1 hover:-translate-x-1 hover:shadow-nb-lg transition-all"
             >
               <Play size={18} strokeWidth={2.75} fill="#000" />
-              Watch 90s Demo
+              See Demo
             </a>
           </motion.div>
 
